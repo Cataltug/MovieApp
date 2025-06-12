@@ -16,7 +16,7 @@ Movie Library App is a React Native mobile application that lets users browse an
 
 ## **Clone the repo**
 
-- git clone https://github.com/yourusername/MovieLibraryApp.git
+- git clone https://github.com/Cataltug/MovieApp.git
 - cd MovieLibraryApp
 
 ## Install dependencies
