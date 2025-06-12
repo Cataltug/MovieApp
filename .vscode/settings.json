@@ -1,0 +1,50 @@
+{
+  // Varsayılan formatter’ı Prettier yapıyoruz
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // JavaScript ve JSX dosyalarında da Prettier kullan
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  // ESLint’in kendi formatlama özelliğini kapat
+  "eslint.format.enable": false,
+
+  // Otomatik kaydetmede formatlama istersen:
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+
+  // Kod eylemleri (import ekleme/silme vs) ESLint değil, Prettier’a bırak
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "never",
+    "source.organizeImports": "never",
+    "source.addMissingImports": "never",
+    "source.removeUnusedImports": "never"
+  },
+
+  "editor.insertSpaces": true,
+  "files.eol": "\n",
+  "workbench.tree.indent": 16,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#05ef3c"
+  },
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/.eslintrc.**": true,
+    "**/tsconfig.json": true,
+    ".bundle": true,
+    ".yarn": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true,
+    "**/tmp/**": true,
+    "**/dist/**": true
+  }
+}

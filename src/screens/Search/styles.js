@@ -1,0 +1,66 @@
+import { StyleSheet } from "react-native";
+import { colors, spacingX, spacingY } from "../../constants/theme";
+import { verticalScale } from "../../utils/styling";
+
+export default StyleSheet.create({
+  row: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginBottom: spacingY._10,
+    paddingHorizontal: spacingX._20,
+  },
+  searchButton: {
+    flex: 1,
+    padding: spacingY._10,
+    backgroundColor: colors.neutral700,
+    borderRadius: 8,
+    alignItems: "center",
+  },
+  searchInputWrapper: {
+    flex: 1,
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: colors.neutral700,
+    borderRadius: 8,
+    paddingHorizontal: spacingX._10,
+  },
+  searchInput: {
+    flex: 1,
+    color: colors.white,
+    height: verticalScale(36),
+    marginHorizontal: spacingX._5,
+  },
+  chip: {
+    paddingHorizontal: spacingX._15,
+    paddingVertical: spacingY._8,
+    backgroundColor: colors.neutral700,
+    borderRadius: 20,
+    marginRight: spacingX._10,
+    flexShrink: 0,
+  },
+  card: {
+    flex: 1,
+    marginBottom: spacingY._20,
+    marginHorizontal: spacingX._5,
+  },
+  poster: {
+    width: "100%",
+    height: verticalScale(200),
+    borderRadius: 8,
+  },
+  modalOverlay: {
+    flex: 1,
+    backgroundColor: "rgba(0,0,0,0.4)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  modalContent: {
+    width: "80%",
+    backgroundColor: colors.neutral800,
+    borderRadius: 8,
+    padding: spacingY._20,
+  },
+  modalItem: {
+    paddingVertical: spacingY._10,
+  },
+});
